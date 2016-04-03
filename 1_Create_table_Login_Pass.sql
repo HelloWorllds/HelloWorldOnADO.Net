@@ -1,0 +1,27 @@
+USE [PassWarder]
+GO
+
+/****** Object:  Table [dbo].[Login_Pass]    Script Date: 10/10/2014 10:07:38 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Login_Pass](
+	[Login_PassID] [bigint] IDENTITY(7,7) NOT NULL,
+	[Login] [varchar](100) NOT NULL UNIQUE,
+	[Password] [varchar](255) NOT NULL,
+ CONSTRAINT [PK_Login_Pass] PRIMARY KEY CLUSTERED 
+(
+	[Login_PassID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO

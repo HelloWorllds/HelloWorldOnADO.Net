@@ -1,0 +1,2 @@
+CREATE DATABASE PassWarder;
+GO
